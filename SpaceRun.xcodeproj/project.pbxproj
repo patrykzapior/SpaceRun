@@ -17,6 +17,8 @@
 		A64EEA342FCE080600EB8E46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A64EEA332FCE080600EB8E46 /* Assets.xcassets */; };
 		A64EEA372FCE080600EB8E46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A64EEA362FCE080600EB8E46 /* Preview Assets.xcassets */; };
 		A64EEA442FCE0A9000EB8E46 /* FlightManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64EEA432FCE0A9000EB8E46 /* FlightManager.swift */; };
+		A6A40FCF2FD18519004A1C42 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A40FCE2FD18519004A1C42 /* LaunchView.swift */; };
+		A6A40FD12FD18533004A1C42 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A40FD02FD18532004A1C42 /* HistoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,9 @@
 		A64EEA332FCE080600EB8E46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A64EEA362FCE080600EB8E46 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A64EEA432FCE0A9000EB8E46 /* FlightManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightManager.swift; sourceTree = "<group>"; };
+		A6A40FCD2FD17FAB004A1C42 /* SpaceRun Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SpaceRun Watch App.entitlements"; sourceTree = "<group>"; };
+		A6A40FCE2FD18519004A1C42 /* LaunchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaunchView.swift; path = ../../../../Downloads/LaunchView.swift; sourceTree = "<group>"; };
+		A6A40FD02FD18532004A1C42 /* HistoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryView.swift; path = ../../../../Downloads/HistoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +120,11 @@
 		A64EEA2E2FCE07FC00EB8E46 /* SpaceRun Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				A6A40FCD2FD17FAB004A1C42 /* SpaceRun Watch App.entitlements */,
 				A64EEA2F2FCE07FC00EB8E46 /* SpaceRunApp.swift */,
 				A64EEA432FCE0A9000EB8E46 /* FlightManager.swift */,
+				A6A40FD02FD18532004A1C42 /* HistoryView.swift */,
+				A6A40FCE2FD18519004A1C42 /* LaunchView.swift */,
 				A64EEA312FCE07FC00EB8E46 /* CockpitView.swift */,
 				A64EEA332FCE080600EB8E46 /* Assets.xcassets */,
 				A64EEA352FCE080600EB8E46 /* Preview Content */,
@@ -244,6 +252,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A64EEA322FCE07FC00EB8E46 /* CockpitView.swift in Sources */,
+				A6A40FCF2FD18519004A1C42 /* LaunchView.swift in Sources */,
+				A6A40FD12FD18533004A1C42 /* HistoryView.swift in Sources */,
 				A64EEA302FCE07FC00EB8E46 /* SpaceRunApp.swift in Sources */,
 				A64EEA442FCE0A9000EB8E46 /* FlightManager.swift in Sources */,
 			);
@@ -379,6 +389,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SpaceRun Watch App/SpaceRun Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SpaceRun Watch App/Preview Content\"";
@@ -386,6 +397,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = SpaceRun;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "SpaceRun odczytuje dystans i tętno podczas biegu";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "SpaceRun zapisuje Twój trening biegowy";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = pz.SpaceRun;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -409,6 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SpaceRun Watch App/SpaceRun Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SpaceRun Watch App/Preview Content\"";
@@ -416,6 +430,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = SpaceRun;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "SpaceRun odczytuje dystans i tętno podczas biegu";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "SpaceRun zapisuje Twój trening biegowy";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = pz.SpaceRun;
 				LD_RUNPATH_SEARCH_PATHS = (
